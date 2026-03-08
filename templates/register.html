@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Cadastro</title>
+<link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Criar Conta</h2>
+
+<form>
+
+<input type="text"
+placeholder="Usuário (8-16 caracteres)"
+minlength="8"
+maxlength="16"
+required>
+
+<input type="password"
+placeholder="Senha (símbolo + número)"
+pattern="(?=.*[0-9])(?=.*[!@#$%^&*]).{6,12}"
+required>
+
+<input type="tel"
+placeholder="Telefone"
+required>
+
+<div class="captcha">
+<input type="checkbox"> Não sou robô
+</div>
+
+<button>Cadastrar</button>
+
+</form>
+
+</div>
+
+</body>
+
+</html>
